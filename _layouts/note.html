@@ -7,7 +7,7 @@ layout: default
     <p class="eyebrow">{{ page.category | default: 'Nota tècnica' | escape }}</p>
     <h1 class="post-title">{{ page.title | escape }}</h1>
     {% if page.last_modified_at %}<p class="post-meta">Actualitzada el <time datetime="{{ page.last_modified_at | date: '%Y-%m-%d' }}">{{ page.last_modified_at | date: '%d/%m/%Y' }}</time></p>{% endif %}
-    {% if page.tags.size > 0 %}<ul class="tags" aria-label="Etiquetes">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+    {% if page.tags.size > 0 %}<ul class="tags" aria-label="Etiquetes">{% for tag in page.tags %}<li><a href="{{ '/' | relative_url }}?tag={{ tag | uri_escape | escape }}#notes">{{ tag | escape }}</a></li>{% endfor %}</ul>{% endif %}
   </header>
   <div class="post-content">{{ content }}</div>
 </article>

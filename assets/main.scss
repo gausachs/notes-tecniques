@@ -63,3 +63,13 @@ table td, table th { border-color: #dce3d7; }
   .note-card { padding: 22px; }
   .footer-content { flex-direction: column; gap: 4px; }
 }
+
+[hidden] { display: none !important; }
+.tag-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.tag-filter { font: inherit; font-size: 14px; padding: 8px 14px; border: 1px solid #cad7c6; border-radius: 20px; color: $accent; background: #fffef9; cursor: pointer; }
+.tag-filter:hover { background: #edf2e7; }
+.tag-filter[aria-pressed="true"] { background: $accent; border-color: $accent; color: white; }
+.tag-filter:focus-visible { outline: 3px solid #b48230; outline-offset: 3px; }
+.tags li { padding: 0; }
+.tags a { display: block; padding: 6px 10px; }
+.note-count { white-space: normal; }
