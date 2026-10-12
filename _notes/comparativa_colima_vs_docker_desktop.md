@@ -4,7 +4,7 @@ title: "Comparativa: Colima vs Docker Desktop"
 description: "Codima en front de Docker Desktop, pros i contras"
 category: docker
 date: 2026-10-12
-tags: [docker, colima, macos, devops]
+tags: [docker, colima, macos, devops, eines]
 ---
 
 # Colima vs Docker Desktop
