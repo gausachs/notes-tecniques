@@ -1,0 +1,65 @@
+---
+---
+@import "minima";
+
+$ink: #203b36;
+$muted: #62736c;
+$accent: #216750;
+
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: $ink; background: #f7f8f2; line-height: 1.75; }
+.wrapper { max-width: 1060px; padding-left: 32px; padding-right: 32px; }
+a { color: $accent; text-underline-offset: 4px; }
+a:visited { color: $accent; }
+a:hover { color: #123f30; }
+a:focus-visible { outline: 3px solid #b48230; outline-offset: 5px; border-radius: 2px; }
+.site-header { border-top: 4px solid $accent; border-bottom: 1px solid #dce3d7; min-height: 88px; background: #fffef9; }
+.site-header .wrapper { padding-top: 14px; padding-bottom: 14px; }
+.site-title, .site-title:visited { font-size: 20px; font-weight: 750; letter-spacing: -.6px; color: $ink; }
+.site-nav { line-height: 56px; }
+.page-content { padding: 64px 0 80px; }
+.eyebrow { color: $accent; font: 600 12px/1.5 ui-monospace, monospace; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+.hero { padding: 0 0 48px; border-bottom: 1px solid #dce3d7; margin-bottom: 40px; }
+.hero h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.1; letter-spacing: -2.5px; max-width: 760px; margin-bottom: 24px; font-weight: 750; }
+.hero p:last-child { max-width: 600px; color: $muted; font-size: 19px; margin-bottom: 0; }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 20px; }
+.section-heading h2 { font-size: 22px; font-weight: 650; margin: 0; }
+.note-count { color: $muted; font: 13px ui-monospace, monospace; white-space: nowrap; }
+.notes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; list-style: none; margin: 0; }
+.note-card { background: #fffef9; border: 1px solid #dce3d7; border-radius: 14px; padding: 28px; }
+.note-category { color: $accent; font: 600 12px ui-monospace, monospace; text-transform: uppercase; letter-spacing: 1px; }
+.note-card h3 { font-size: 25px; line-height: 1.35; letter-spacing: -.6px; margin: 16px 0; }
+.note-card h3 a { color: $ink; }
+.note-card p { color: $muted; font-size: 15px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; list-style: none; }
+.tags li { background: #edf2e7; color: #385a46; border-radius: 5px; padding: 3px 9px; font: 12px/1.5 ui-monospace, monospace; }
+.post { max-width: 820px; margin: auto; }
+.back-link { display: inline-block; margin-bottom: 28px; font-size: 14px; }
+.post-header { border-bottom: 1px solid #dce3d7; padding-bottom: 28px; margin-bottom: 36px; }
+.post-title { font-size: clamp(32px, 5vw, 48px); font-weight: 750; line-height: 1.15; letter-spacing: -1.5px; }
+.post-meta { color: $muted; }
+.post-content { overflow-wrap: anywhere; }
+.post-content h1 { font-size: 30px; }
+.post-content h2 { font-size: 26px; margin-top: 40px; font-weight: 650; }
+.post-content h3 { font-size: 21px; margin-top: 28px; font-weight: 600; }
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; border-color: #dce3d7; border-radius: 5px; background: #edf2e7; }
+pre { padding: 20px; line-height: 1.65; overflow-x: auto; }
+.highlighter-rouge .highlight { background: #edf2e7; border-radius: 8px; }
+pre code { padding: 0; }
+hr { border: 0; border-top: 1px solid #dce3d7; margin: 32px 0; }
+blockquote { color: $muted; border-left-color: $accent; font-size: 17px; letter-spacing: 0; }
+table { display: block; overflow-x: auto; color: $ink; font-size: 14px; }
+table th { background: #e8eee2; }
+table td, table th { border-color: #dce3d7; }
+.site-footer { border-top: 1px solid #dce3d7; padding: 28px 0; }
+.footer-content { display: flex; justify-content: space-between; gap: 20px; color: $muted; font-size: 13px; }
+.footer-content p { margin: 0; }
+@media (max-width: 650px) {
+  .wrapper { padding-left: 20px; padding-right: 20px; }
+  .page-content { padding-top: 36px; }
+  .site-title { font-size: 16px; letter-spacing: -.4px; }
+  .notes-grid { grid-template-columns: 1fr; }
+  .hero h1 { letter-spacing: -1.5px; }
+  .note-card { padding: 22px; }
+  .footer-content { flex-direction: column; gap: 4px; }
+}

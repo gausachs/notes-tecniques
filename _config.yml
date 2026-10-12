@@ -1,0 +1,31 @@
+title: Base de Coneixement Tècnica
+description: Apunts, comandes i guies de desenvolupament
+theme: minima
+lang: ca
+baseurl: "/notes-tecniques"
+
+header_pages: []
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+
+# Definir una col·lecció de notes sense obligació de data
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+# Habilitar ressaltat de sintaxi per a blocs de codi
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
