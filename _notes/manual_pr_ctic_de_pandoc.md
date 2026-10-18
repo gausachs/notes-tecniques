@@ -2,7 +2,7 @@
 title: "Pandoc - comandes bàsiques"
 description: "Qué és, com utilitzar-lo"
 category: web
-tags: [pandoc, markdown, eines]
+tags: [pandoc, markdown, eines, epub]
 last_modified_at: 2026-10-17
 ---
 
