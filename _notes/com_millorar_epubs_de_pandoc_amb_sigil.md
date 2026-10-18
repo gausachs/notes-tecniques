@@ -1,7 +1,7 @@
 ---
 title: "Pandoc/Sigil "
 description: "Com Millorar un ePub de Pandoc utilitzant Sigil"
-category: web
+category: edit
 tags: [pandoc, markdown, eines, sigil, epub]
 last_modified_at: 2026-10-18
 ---
