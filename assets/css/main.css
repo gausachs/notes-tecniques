@@ -55,6 +55,26 @@ body {
   padding-right: 0;
 }
 
+/* El primer element del contingut no ha de tenir marge superior */
+.post-content > :first-child {
+  margin-top: 0;
+}
+
+/* Assegurar que el títol i el text comencen al mateix lloc */
+.post-title,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content pre,
+.post-content blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
 .post-title {
   margin: 0 0 0.5rem;
   font-size: 2rem;
