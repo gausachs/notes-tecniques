@@ -1,0 +1,19 @@
+/* ============================================
+   Categoria: edit  (porpra, to més editorial)
+   ============================================ */
+:root { --accent: #6b4fa0; }
+
+body { font-family: Georgia, "Times New Roman", serif; }
+
+h1 { font-weight: 400; letter-spacing: -0.01em; }
+
+h2 { color: var(--accent); font-weight: 400; }
+
+blockquote {
+  border-left-color: var(--accent);
+  font-style: italic;
+}
+
+.cat-edit h1 { font-weight: 400; }
+.cat-edit h2 { color: #6b4fa0; font-weight: 400; }
+.cat-edit blockquote { border-left-color: #6b4fa0; font-style: italic; }

@@ -1,0 +1,17 @@
+/* ============================================
+   Categoria: web  (verd)
+   ============================================ */
+:root { --accent: #1a7f5a; }
+
+h1 { font-weight: 600; }
+
+h2 {
+  color: var(--accent);
+  border-bottom: 1px solid #cde8dc;
+  padding-bottom: 0.25rem;
+}
+
+blockquote { border-left-color: var(--accent); }
+
+.cat-web h2 { color: #1a7f5a; border-bottom: 1px solid #cde8dc; }
+.cat-web blockquote { border-left-color: #1a7f5a; }

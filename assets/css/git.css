@@ -1,0 +1,17 @@
+/* ============================================
+   Categoria: git  (taronja)
+   ============================================ */
+:root { --accent: #c25e00; }
+
+h1 { border-bottom: 3px dotted var(--accent); padding-bottom: 0.4rem; }
+
+h2 { color: var(--accent); }
+
+code { background: #fff3e6; }
+
+pre { border-left-color: var(--accent); }
+
+.cat-git h1 { border-bottom: 3px dotted #c25e00; padding-bottom: 0.4rem; }
+.cat-git h2 { color: #c25e00; }
+.cat-git code { background: #fff3e6; }
+.cat-git pre { border-left-color: #c25e00; }

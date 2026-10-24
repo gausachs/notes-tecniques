@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<article class="post">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{% if page.category %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | append: page.category | append: '.css' | relative_url }}">
+{% endif %}
+
+<article class="post cat-{{ page.category | default: 'default' | escape }}">
   <a class="back-link" href="{{ '/' | relative_url }}">← Totes les notes</a>
   <header class="post-header">
     <p class="eyebrow">{{ page.category | default: 'Nota tècnica' | escape }}</p>
