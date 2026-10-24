@@ -47,6 +47,14 @@ body {
   padding: 2rem 1.25rem 4rem;
 }
 
+.post-header,
+.post-content {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .post-title {
   margin: 0 0 0.5rem;
   font-size: 2rem;
