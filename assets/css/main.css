@@ -41,10 +41,12 @@ body {
   color: var(--accent);
 }
 
+/* Els marges laterals ja els defineix .wrapper, també en mòbil. */
 .post {
-  max-width: 760px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
-  padding: 2rem 1.25rem 4rem;
+  padding: 2rem 0 4rem;
 }
 
 .post-header,
